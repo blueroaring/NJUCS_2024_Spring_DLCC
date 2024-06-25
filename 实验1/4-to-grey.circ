@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project source="2.16.1.0.exe" version="1.0">
+This file is intended to be loaded by Logisim http://logisim.altervista.org
+<lib desc="#Wiring" name="0">
+    <tool name="Splitter">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Pin">
+      <a name="facing" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Probe">
+      <a name="facing" val="west"/>
+      <a name="radix" val="10signed"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Tunnel">
+      <a name="width" val="32"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Pull Resistor">
+      <a name="facing" val="north"/>
+    </tool>
+    <tool name="Clock">
+      <a name="facing" val="north"/>
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="ProgrammableGenerator">
+      <a name="labelfont" val="Dialog plain 12"/>
+    </tool>
+    <tool name="Constant">
+      <a name="value" val="0x0"/>
+    </tool>
+  </lib>
+  <lib desc="#Gates" name="1"/>
+  <lib desc="#TTL" name="2"/>
+  <lib desc="#Plexers" name="3"/>
+  <lib desc="#Arithmetic" name="4"/>
+  <lib desc="#Memory" name="5"/>
+  <lib desc="#I/O" name="6"/>
+  <lib desc="#Base" name="7">
+    <tool name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+  </lib>
+  <main name="main"/>
+  <options>
+    <a name="gateUndefined" val="ignore"/>
+    <a name="simlimit" val="1000"/>
+    <a name="simrand" val="0"/>
+  </options>
+  <mappings>
+    <tool lib="7" map="Button2" name="Poke Tool"/>
+    <tool lib="7" map="Button3" name="Menu Tool"/>
+    <tool lib="7" map="Ctrl Button1" name="Menu Tool"/>
+  </mappings>
+  <toolbar>
+    <tool lib="7" name="Poke Tool"/>
+    <tool lib="7" name="Edit Tool"/>
+    <sep/>
+    <tool lib="7" name="Text Tool">
+      <a name="text" val=""/>
+      <a name="font" val="Dialog plain 12"/>
+      <a name="color" val="#000000"/>
+      <a name="halign" val="center"/>
+      <a name="valign" val="base"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="tristate" val="false"/>
+    </tool>
+    <tool lib="0" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+    </tool>
+    <tool lib="1" name="NOT Gate"/>
+    <tool lib="1" name="AND Gate"/>
+    <tool lib="1" name="OR Gate"/>
+  </toolbar>
+  <circuit name="main">
+    <a name="circuit" val="main"/>
+    <a name="clabel" val=""/>
+    <a name="clabelup" val="east"/>
+    <a name="clabelfont" val="Dialog plain 12"/>
+    <a name="clabelcolor" val="#000000"/>
+    <wire from="(60,90)" to="(90,90)"/>
+    <wire from="(330,100)" to="(380,100)"/>
+    <wire from="(110,140)" to="(310,140)"/>
+    <wire from="(110,80)" to="(110,140)"/>
+    <wire from="(160,70)" to="(160,80)"/>
+    <wire from="(110,80)" to="(160,80)"/>
+    <wire from="(160,70)" to="(180,70)"/>
+    <wire from="(150,50)" to="(150,70)"/>
+    <wire from="(150,50)" to="(180,50)"/>
+    <wire from="(240,60)" to="(240,130)"/>
+    <wire from="(220,60)" to="(240,60)"/>
+    <wire from="(240,130)" to="(310,130)"/>
+    <wire from="(140,60)" to="(140,100)"/>
+    <wire from="(140,100)" to="(180,100)"/>
+    <wire from="(130,70)" to="(130,120)"/>
+    <wire from="(130,120)" to="(180,120)"/>
+    <wire from="(110,70)" to="(130,70)"/>
+    <wire from="(130,70)" to="(150,70)"/>
+    <wire from="(220,110)" to="(270,110)"/>
+    <wire from="(270,110)" to="(270,120)"/>
+    <wire from="(270,120)" to="(310,120)"/>
+    <wire from="(130,30)" to="(180,30)"/>
+    <wire from="(130,30)" to="(130,60)"/>
+    <wire from="(130,60)" to="(140,60)"/>
+    <wire from="(110,60)" to="(130,60)"/>
+    <wire from="(110,10)" to="(110,50)"/>
+    <wire from="(110,10)" to="(180,10)"/>
+    <wire from="(220,20)" to="(290,20)"/>
+    <wire from="(290,20)" to="(290,110)"/>
+    <wire from="(290,110)" to="(310,110)"/>
+    <comp lib="0" loc="(330,100)" name="Splitter">
+      <a name="facing" val="west"/>
+    </comp>
+    <comp lib="0" loc="(380,100)" name="Pin">
+      <a name="facing" val="west"/>
+      <a name="output" val="true"/>
+      <a name="width" val="4"/>
+      <a name="label" val="GREY"/>
+    </comp>
+    <comp lib="1" loc="(220,60)" name="XOR Gate"/>
+    <comp lib="1" loc="(220,20)" name="XOR Gate"/>
+    <comp lib="0" loc="(60,90)" name="Pin">
+      <a name="width" val="4"/>
+      <a name="tristate" val="false"/>
+      <a name="label" val="DATA"/>
+    </comp>
+    <comp lib="0" loc="(90,90)" name="Splitter"/>
+    <comp lib="1" loc="(220,110)" name="XOR Gate"/>
+  </circuit>
+</project>
