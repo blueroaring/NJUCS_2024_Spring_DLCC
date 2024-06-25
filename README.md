@@ -3,11 +3,12 @@
 NJUCS_2024_DLCO
 ====
 ----
-这份readme 源于另一份仓库 from RiceCakeInJar/NJUCS_2023_DLCC,仅对其稍加修改，如有侵权请原作者联系\<br>
-包括了6次课内实验的实验手册、全部circ源文件和实验报告 \<br>
-NJUCS 2024 Digital Logic and Computer Composition - Course Experiment\<br>
-Including lab manuals, all circ source documents and lab reports of the 6 in-class experiments\<br>
-为什么要分享这个实验 Why I share
+这份readme 源于另一份仓库 from RiceCakeInJar/NJUCS_2023_DLCC,仅对其稍加修改，如有侵权请原作者联系  
+包括了6次课内实验的实验手册、全部circ源文件和实验报告  
+NJUCS 2024 Digital Logic and Computer Composition - Course Experiment  
+Including lab manuals, all circ source documents and lab reports of the 6 in-class experiments  
+---
+为什么要分享这个实验 Why I share  
 -----
 作弊是不受欢迎的，但鉴于课程实验非常坐牢，大家在下学期并没有足够的时间快速理解实验的核心要义（这并不意味你可以逃课不去自己尽力尝试分析）
 因此，欢迎使用本仓库中的内容，前提是遵守如下的使用准则
